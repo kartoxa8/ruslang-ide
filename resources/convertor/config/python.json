@@ -1,0 +1,117 @@
+{
+  "language": "Python",
+  "typePrefixes": {
+    "1«": "",
+    "2«": "list",
+    "3«": "",
+    "4«": ""
+  },
+  "binaryOperations": {
+    "PlusOperation": "+",
+    "MinusOperation": "-",
+    "MultiplyOperation": "*",
+    "DivideOperation": "/",
+    "ModOperation": "%",
+    "GreaterOperation": ">",
+    "LessOperation": "<",
+    "EqualOperation": "==",
+    "NotEqualOperation": "!=",
+    "NotEqualOpeartion": "!=",
+    "GreaterEqOperation": ">=",
+    "GreaterOrEqualOperation": ">=",
+    "LessEqOperation": "<=",
+    "LessOrEqualOperation": "<=",
+    "AndOperation": "and",
+    "OrOperation": "or"
+  },
+  "keywords": {
+    "Function": "def",
+    "Procedure": "def",
+    "Return": "return",
+    "If": "if",
+    "Else": "else",
+    "ElseIf": "elif",
+    "Variable": "",
+    "VariableInit": "",
+    "Constant": "",
+    "Assign": "=",
+    "Output": "print",
+    "Call": "",
+    "New": "",
+    "While": "while",
+    "For": "for",
+    "Break": "break",
+    "Continue": "continue",
+    "ничего": "null"
+  },
+  "languagePatterns": {
+    "importStatement": "import %s",
+    "functionHeader": "def %s(%s):",
+    "functionFooter": "",
+    "procedureHeader": "def %s(%s):",
+    "procedureFooter": "",
+    "variableDeclaration": "%s",
+    "variableInitialization": "%s = %s",
+    "constantDeclaration": "%s = %s",
+    "assignStatement": "%s = %s",
+    "outputStatement": "print(%s)",
+    "returnStatement": "return %s",
+    "callStatement": "%s",
+    "ifHeader": "if %s:",
+    "ifFooter": "",
+    "elseIfHeader": "elif %s:",
+    "elseHeader": "else:",
+    "whileHeader": "while %s:",
+    "whileFooter": "",
+    "doNTimesHeader": "for %s in range(%s):",
+    "doNTimesFooter": "",
+    "blockStart": ":",
+    "blockEnd": "",
+    "statementSeparator": "",
+    "typeSeparator": "",
+    "paramSeparator": ", ",
+    "pointerSymbol": "",
+    "referenceSymbol": "",
+    "arrayStart": "[",
+    "arrayEnd": "]",
+    "input": "%s = input()",
+    "record": "class %s"
+  },
+  "imports": {
+    "default": [],
+    "mapping": {
+      "Рандом": "random"
+    }
+  },
+  "specialFunctions": {
+    "Система.Формат": "f\"{{ {0} : {1}.{2}f }}\"",
+    "Рандом.Целое": "random.randint({0}, {1})",
+    ".размер()": "len({0})"
+  },
+  "functionPatterns": {
+    "Система.Формат": {
+      "pattern": "f\"{%s} : %s%sf\"",
+      "args": ["value", "width", "precision"]
+    },
+    "Рандом.Целое": {
+      "pattern": "random.randint(%s, %s)",
+      "library": "math/rand",
+      "args": ["min", "max"]
+    }
+  },
+  "naming": {
+    "functionPrefix": "",
+    "methodPrefix": "",
+    "privatePrefix": "_",
+    "publicPrefix": ""
+  },
+  "options": {
+    "indentSize": 4,
+    "useSpacesForIndent": true,
+    "useSemicolon": false
+  },
+  "mainFunction": {
+    "header": "def main():",
+    "footer": "\nif __name__ == \"__main__\":\n\tmain()"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "language": "C++",
+  "types": {
+    "Integer": "int",
+    "String": "string",
+    "Boolean": "bool",
+    "Float": "float",
+    "Real": "double",
+    "Character": "char",
+    "Object": "any"
+  },
+  "typePrefixes": {
+    "1«": "",
+    "2«": "[]",
+    "3«": "",
+    "4«": "*"
+  },
+  "binaryOperations": {
+    "PlusOperation": "+",
+    "MinusOperation": "-",
+    "MultiplyOperation": "*",
+    "DivideOperation": "/",
+    "ModOperation": "%",
+    "GreaterOperation": ">",
+    "LessOperation": "<",
+    "EqualOperation": "==",
+    "NotEqualOperation": "!=",
+    "NotEqualOpeartion": "!=",
+    "GreaterEqOperation": ">=",
+    "GreaterOrEqualOperation": ">=",
+    "LessEqOperation": "<=",
+    "LessOrEqualOperation": "<=",
+    "AndOperation": "&&",
+    "OrOperation": "||"
+  },
+  "keywords": {
+    "Function": "{{type}}",
+    "Procedure": "void",
+    "Return": "return",
+    "If": "if",
+    "Else": "else",
+    "ElseIf": "else if",
+    "Variable": "",
+    "VariableInit": "",
+    "Constant": "const",
+    "Assign": "=",
+    "Output": "cout",
+    "Call": "",
+    "New": "new",
+    "While": "while",
+    "For": "for",
+    "Break": "break",
+    "Continue": "continue",
+    "ничего": "nullptr"
+  },
+  "languagePatterns": {
+    "importStatement": "#include <%s>",
+    "functionHeader": "%s %s(%s) {",
+    "functionFooter": "}",
+    "procedureHeader": "void %s(%s) {",
+    "procedureFooter": "}",
+    "variableDeclaration": "%s %s",
+    "variableInitialization": "%s %s = %s",
+    "constantDeclaration": "const %s %s = %s",
+    "assignStatement": "%s = %s",
+    "outputStatement": "cout << %s",
+    "returnStatement": "return %s",
+    "callStatement": "%s",
+    "ifHeader": "if (%s) {",
+    "ifFooter": "}",
+    "elseIfHeader": "else if (%s) {",
+    "elseHeader": "else {",
+    "whileHeader": "while (%s) {",
+    "whileFooter": "}",
+    "doNTimesHeader": "for (%s %s = 0; %s < %s; %s++) {",
+    "doNTimesFooter": "}",
+    "blockStart": "{",
+    "blockEnd": "}",
+    "statementSeparator": "",
+    "typeSeparator": " ",
+    "paramSeparator": ", ",
+    "pointerSymbol": "*",
+    "referenceSymbol": "&",
+    "arrayStart": "[",
+    "arrayEnd": "]",
+    "input": "cin >> %s",
+    "record": "class %s"
+  },
+  "imports": {
+    "default": ["iostream"],
+    "mapping": {
+      "Рандом": "random",
+      "Время": "ctime",
+      "Система": "cstdlib"
+    }
+  },
+  "specialFunctions": {
+    "Система.Формат": "format(\"[{:>^s}]\", %s)",
+    "Рандом.Целое": "rand.next({0}, {1})",
+    ".размер()": "len({0})"
+  },
+  "functionPatterns": {
+    "Система.Формат": {
+      "pattern": "format(\"{:%s%sf}\", %s)",
+      "args": ["value", "width", "precision"]
+    },
+    "Рандом.Целое": {
+      "pattern": "%s + rand() %% %s",
+      "library": "rand",
+      "args": ["min", "max"]
+    }
+  },
+  "naming": {
+    "functionPrefix": "",
+    "methodPrefix": "",
+    "privatePrefix": "_",
+    "publicPrefix": ""
+  },
+  "options": {
+    "indentSize": 4,
+    "useSpacesForIndent": false,
+    "useSemicolon": true
+  },
+  "mainFunction": {
+    "header": "int main() {",
+    "footer": "}"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "language": "Go",
+  "types": {
+    "Integer": "int",
+    "String": "string",
+    "Boolean": "bool",
+    "Float": "float64",
+    "Real": "float64",
+    "Character": "rune",
+    "Object": "any"
+  },
+  "typePrefixes": {
+    "1«": "",
+    "2«": "[]",
+    "3«": "func",
+    "4«": "*"
+  },
+  "binaryOperations": {
+    "PlusOperation": "+",
+    "MinusOperation": "-",
+    "MultiplyOperation": "*",
+    "DivideOperation": "/",
+    "ModOperation": "%",
+    "GreaterOperation": ">",
+    "LessOperation": "<",
+    "EqualOperation": "==",
+    "NotEqualOperation": "!=",
+    "NotEqualOpeartion": "!=",
+    "GreaterEqOperation": ">=",
+    "GreaterOrEqualOperation": ">=",
+    "LessEqOperation": "<=",
+    "LessOrEqualOperation": "<=",
+    "AndOperation": "&&",
+    "OrOperation": "||"
+  },
+  "keywords": {
+    "Function": "func",
+    "Procedure": "func",
+    "Return": "return",
+    "If": "if",
+    "Else": "else",
+    "ElseIf": "else if",
+    "Variable": "var",
+    "VariableInit": "var",
+    "Constant": "const",
+    "Assign": "=",
+    "Output": "fmt.Print",
+    "Call": "",
+    "New": "new",
+    "While": "for",
+    "For": "for",
+    "Break": "break",
+    "Continue": "continue",
+    "ничего": "nil"
+  },
+  "languagePatterns": {
+    "packageDeclaration": "package %s",
+    "importStatement": "import \"%s\"",
+    "importBlockStart": "import (",
+    "importBlockEnd": ")",
+    "functionHeader": "func %s(%s) %s {",
+    "functionFooter": "}",
+    "procedureHeader": "func %s(%s) {",
+    "procedureFooter": "}",
+    "variableDeclaration": "var %s %s",
+    "variableInitialization": "var %s %s = %s",
+    "constantDeclaration": "const %s %s = %s",
+    "assignStatement": "%s = %s",
+    "outputStatement": "fmt.Print(%s)",
+    "returnStatement": "return %s",
+    "callStatement": "%s",
+    "ifHeader": "if %s {",
+    "ifFooter": "}",
+    "elseIfHeader": "} else if %s {",
+    "elseHeader": "} else {",
+    "whileHeader": "for %s {",
+    "whileFooter": "}",
+    "doNTimesHeader": "for %s := 0; %s < %s; %s++ {",
+    "doNTimesFooter": "}",
+    "blockStart": "{",
+    "blockEnd": "}",
+    "statementSeparator": "",
+    "typeSeparator": " ",
+    "paramSeparator": ", ",
+    "pointerSymbol": "*",
+    "referenceSymbol": "*",
+    "arrayStart": "[",
+    "arrayEnd": "]",
+    "input": "fmt.Scanln(&%s)",
+    "record": "type %s struct %s"
+  },
+  "imports": {
+    "default": ["fmt"],
+    "mapping": {
+      "Рандом": "math/rand",
+      "Время": "time"
+    }
+  },
+  "specialFunctions": {
+    "Система.Формат": "fmt.Sprintf(%v, {{args}})",
+    "Рандом.Целое": "rand.Intn",
+    "Время.Теперь": "time.Now",
+    ".размер()": "len"
+  },
+  "functionPatterns": {
+    "Система.Формат": {
+      "pattern": "fmt.Sprintf(\"%%%s%sd\", %s)",
+      "args": ["width", "precision", "value"]
+    },
+    "Рандом.Целое": {
+      "pattern": "rand.Intn((%s) - (%s) + 1) + (%s)",
+      "library": "math/rand",
+      "args": ["max", "min", "min"]
+    }
+  },
+  "naming": {
+    "functionPrefix": "",
+    "methodPrefix": "",
+    "privatePrefix": "",
+    "publicPrefix": ""
+  },
+  "options": {
+    "indentSize": 1,
+    "useSpacesForIndent": false,
+    "addPackageDeclaration": true,
+    "useSemicolon": false
+  },
+  "functions": {
+    "mainFunction": "main",
+    "entryPoint": "main"
+  },
+  "mainFunction": {
+    "header": "func main() {",
+    "footer": "}"
+  }
+}
