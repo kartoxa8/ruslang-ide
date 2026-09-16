@@ -1,0 +1,7 @@
+# The repository is a lightweight project page. The complete application is
+# distributed as a GitHub Release ZIP, not stored in Git.
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/LICENSES.chromium.html
